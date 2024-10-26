@@ -13,13 +13,9 @@ public class Main {
         for (int i = 0; i < arr.length; i++) {
             arr[i] = sc.nextInt();
 
-            if (max < arr[i]) max = arr[i];
-        }
-
-        for (int i = 0; i < arr.length; i++) {
-            if (max == arr[i]) {
+            if (max < arr[i]) {
+                max = arr[i];
                 count = i + 1;
-                break;
             }
         }
 
