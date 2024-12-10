@@ -32,7 +32,7 @@ public class Main {
     private static int find(int target) {
         if (arr[target] == target) return target;
 
-        return find(arr[target]);
+        return arr[target] = find(arr[target]);
     }
 
     private static void union(int a, int b) {
@@ -40,7 +40,5 @@ public class Main {
         b = find(b);
 
         if(b != a) arr[b] = a;
-
-
     }
 }
